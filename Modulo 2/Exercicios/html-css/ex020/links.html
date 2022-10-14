@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Links</title>
+        <link rel="shortcut icon" href="imagens/favicon/Logo-G-512.png" type="image/x-icon">
+        <style>
+
+            /*
+                Para CSS
+                # = id
+                . = class
+                : = pseudo-class
+                :: = pseudo-element
+                > = clildren
+            */
+            
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            a {
+                color: #ff0000;
+                text-decoration: none; /*Remove a linha em baixo do texto*/
+                font-weight: bold; /*Para deixar em negrito*/
+            }
+
+            a:visited {
+                color: darkred; /*Para marca os links visitados*/
+            }
+
+            a:hover {
+                color: black; /*Para quando passa o mouse em cima do link o mesmo fica preto*/
+                text-decoration: underline; /*Para quando passar o mouse em cima do link o mesmo fica sublinhado*/
+            }
+
+            a:active {
+                color: yellow; /*É para quando o link for clicado antes de ir para a pagina o mesmo fica Amarelo*/
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Personalizando Links</h1>
+            <!--a href é para colocar um link-->
+            <!--target="_black" é para abrir o link em outra pagina-->
+
+        <ul>
+            <a href="https://gustavoguanabara.github.io" target="_blank"><li>Repositório GiHub</li></a>
+            <a href="https://youtube.com/cursoemvideo" target="_blank"><li>Canal do YouTube</li></a>
+            <a href="https://www.cursoemvideo.com" target="_blank"><li>Site do CursoemVideo</li></a>
+            <a href="https://fast.com/pt/" target="_blank"><li>Teste de Internet</li></a>
+        </ul>
+    </body>
+</html>

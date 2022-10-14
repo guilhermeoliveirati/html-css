@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Modelo de Caixas</title>
+        <link rel="shortcut icon" href="imagens/favicon/Logo-G-512.png" type="image/x-icon">
+
+        <style>
+            h1 {
+                background-color: #f5f5dc;
+                height: 300px; /*Altura*/
+                width: 300px; /*Largura*/
+                /* 
+                Substituindo as tres linhas por uma
+                border-width: 10px;
+                border-style: solid;
+                border-color: #c02424;
+                */
+                border: 10px solid red;
+
+                /*sequencia é em cima, direita, em baixo, esquerda*/
+                /*
+                Substituindo as quatro linhas por uma
+                padding-top: 10px;
+                padding-right: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                */
+                padding: 10px; /*Se os lados forem do mesmo tamanho eu posso informar somente uma vez o tamanho dela*/
+
+                /*sequencia é em cima, direita, em baixo, esquerda*/
+                /*
+                Substituindo as quatro linhas por uma
+                margin-top: 20px;
+                margin-right: 20px;
+                margin-bottom: 40px;
+                margin-left: 20px;
+                */
+
+                /*sequencia é em cima, direita, em baixo, esquerda*/
+                margin: 20px auto 40px auto;
+
+                /*
+                Substituindo as tres linhas por uma
+                outline-width: 5px;
+                outline-style: dashed;
+                outline-color: black;
+                */
+                outline: 5px dashed #000000;
+            }
+
+            a {
+                /*
+                Substituindo as tres linhas por uma
+                border-width: 5px;
+                border-style: dashed;
+                border-color: #00ffff;
+                */
+                border: 5px dashed #00ffff;
+
+                /*
+                Substituindo as quatro linhas por uma
+                padding-top: 10px;
+                padding-right: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                */
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Exemplo de caixa box-level</h1>
+        <!--Quando não tenho nenhum link para ser direcionado eu coloco #-->
+        <p>Paráfrafos também são exemplos de box-level, mas os <a href="#">Links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona</p>
+        <a href="caixa02.html">Caixa 02</a>
+    </body>
+</html>

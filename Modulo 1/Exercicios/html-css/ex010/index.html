@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!--Informar que o site é em Portugues-->
+    <head> <!--Configuração do Site-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="imagens/favicon/Logo-G-512.png" type="image/x-icon"> <!--Icone do Site-->
+        <title>Trabalhando com link</title> <!--Titulo de Site-->
+    </head>
+    <body> <!--Conteudo do Site-->
+        <h1>Usando links externos</h1>
+        <!--A tag A (a href é para incluir um link de uma pagina)-->
+        <!--A Tag target e rel="externo" é para abrir uma nova pagina e informar que o site é de externo-->
+        <p>Você pode acessar o meu <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank" rel="external">repositorio publico no GiHub</a></p>
+        <p>Você tambem pode acessar o meu <a href="https://youtube.com/cursoemvideo" target="_blank" rel="external">canal gratuito no YouTube</a></p>
+        <h1>Usando links internos</h1>
+        <p>Esta é a primeira pagina do site. Se voce quiser, pode acessar tambem a minha <a href="pag002.html" rel="next">segunda pagina</a></p> <!--rel="next" é para informar que é a proxima pagina-->
+        <p>ir para a pagina 3 <a href="noticias/pag003.html">click aqui</a></p>
+        <p>Pagina <a href="index.html" target="_self">1</a></p>
+        <p>Pagina <a href="pag002.html" target="_self" rel="next">2</a></p>
+        <p>pagina <a href="noticias/pag003.html" target="_self" rel="next">3</a></p>
+        <h1>Links para download</h1>
+        <ul>
+            <li><a href="Livro/Livro1.pdf" download="Livro1.pdf" type= "applications/vnd.cups-pdf">Baixar livro em PDF</a></li>
+            <li><a href="Livro/Livro2.rar" download="Livro.rar" type="application/rar">livro compactado</a></li>
+        </ul>
+    </body>
+</html>

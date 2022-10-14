@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!--Informar que o site é em portugues-->
+    <head> <!--Configuração do Site-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="imagens/favicon/Logo-G-512.png" type="image/x-icon"> <!--Icone do Site-->
+        <title>Midias em HTML5</title> <!--Titulo do Site-->
+    </head>
+    <body> <!--Conteudo-->
+        <h1>Imagem dinamica</h1> <!--H1 é o titudo-->
+        <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmnte aumente e diminua o tamanho do seu navegador</p> <!--P é o paragrafo-->
+
+        <picture> <!--picture é para imagens ela permite inserir varias imagens-->
+            <source media="(max-width: 750px)" srcset="imagens/p.png" type="image/png"> <!--source media type é para -->
+            <source media="(max-width: 1050px)" srcset="imagens/m.png" type="image/png">
+            <img src="imagens/g.png" alt="imagem flexivel">
+        </picture>
+
+        <h1>Reproduzindo Áudio</h1>
+        <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+        <audio controls> <!--Audio é para inserir um ou mais audios e controls é para aparecer o controle de midia-->
+            <source src="musica/musica1.mp3" type="audio/mpeg">
+            <source src="musica/musica1.ogg" type="audio/ogg">
+        </audio>
+
+        <h1>Reproduzindo Videos</h1>
+        <video src="videos/eleicoes2022.mp4" controls width="300"></video>
+        <video src="videos/sonic.mp4" controls width="300"></video>
+        <!--Para incluir o video direto do YouTube no site basta copia codigo do video que ja vem com o ifram-->
+        <iframe width="300" height="300" src="https://www.youtube.com/embed/X_9fOpCwCsU" title="HOMEM ARANHA: SEM VOLTA PARA CASA ( NANDO MOURA )" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </body>
+</html>
