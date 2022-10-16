@@ -1,6 +1,6 @@
 # html-css
  Curso HTML e CSS
 
-Etou aprendendo a criar sites e agora vou gerenciar meus repositorios
+Estou aprendendo a criar sites e agora vou gerenciar meus repositorios
 
 <a href="..Modulo2/Desafios/d010/android.html">Android</a>
