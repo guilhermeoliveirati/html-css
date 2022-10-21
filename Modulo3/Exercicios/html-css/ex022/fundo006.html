@@ -5,17 +5,24 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="imagens/favicon_G.png" type="image/x-icon">
-        <title>Fundo de Tela</title>
+        <title>Fundo fixo de tela</title>
 
         <style>
             body {
+                
                 height: 97vh; /*ajusta a tela*/
                 background-color: black;
                 background-image: url('imagens/wallpaper002.jpg');
                 background-position: center center;
                 background-repeat: repeat-y;
-                background-size: cover;
-                background-attachment: fixed;
+                background-size: cover; /*completa a tela com o fundo de tela*/
+                background-attachment: fixed; /*Fixa o fundo da tela*/
+                
+                /*Shorthand - backgroud
+                  Color > image > position > repeat > [size] > attachment  
+                */
+
+                background: black url('imagens/wallpaper002.jpg') center center no-repeat cover fixed;
             }
 
             main {
