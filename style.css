@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-/*
 header {
     animation: changeBg 5s infinite alternate linear;
 }
@@ -19,19 +18,20 @@ header {
         background: #c2be06;
     }
     100% {
-        background: #f70505;
+        background: #f305f7;
     }
 }
-*/
 
 header {
+    font-variant: small-caps;
     text-align: center;
-    position: relative;
-    border-radius: 50%;
+    font-size: 30px;
+    border-radius: 50px;
 }
 
 h1 {
-    font-variant: small-caps;
+    color: red;
+    text-shadow: #000000 1px 1px;
 }
 
 a {
@@ -52,26 +52,4 @@ ul {
 
 #modulo3 {
     background-color: #2490d8d1;
-}
-
-.showcase video {
-    width: 500px;
-    height: 100px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    border-radius: 30%;
-}
-
-.title {
-    width:500px;
-    height: 100px;
-    background-color: #000;
-    font-size: 100px;
-    color: #fff;
-    mix-blend-mode: multiply;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 40%;
 }
