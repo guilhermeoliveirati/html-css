@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="imagens/favicon_G.png" type="image/x-icon">
+        <title>Tabelas</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            table {
+                border-collapse: collapse; /*Para juntar tudo*/
+                width: 300px; /*Largura*/
+            }
+
+            td {
+                border: 1px solid black; /*Cria a borda e define a cor*/
+                padding: 10px;
+                text-align: center;
+            }
+
+            .col {
+                background-color: red;
+                color: #000000;
+            }
+            
+            .row {
+                background-color: blue;
+                color: #000000;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Mesclagem de Células</h1>
+        <table>
+            <tr>
+                <td>A</td>
+                <td class="col" colspan="2">B</td> <!--Para ocupar colunas-->
+            </tr>
+            <tr>
+                <td class="row" rowspan="3">D</td> <!--Para ocupar linhas-->
+                <td>E</td>
+                <td class="row" rowspan="2">F</td>
+            </tr>
+            <tr>
+                <td>H</td>
+            </tr>
+            <tr>
+                <td class="col" colspan="2">M</td>
+            </tr>
+        </table>
+    </body>
+</html>
