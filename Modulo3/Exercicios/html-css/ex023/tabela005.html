@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="imagens/favicon_G.png" type="image/x-icon">
+        <title>Exercício de Tabelas</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            table {
+                width: 400px;
+                border-collapse: collapse;
+            }
+
+            caption {
+                font-size: 1.3em;
+                font-weight: bold;
+                padding: 8px;
+            }
+
+            th, td {
+                border: solid 1px black;
+                padding: 8px;
+            }
+
+            col.cnome {
+                background-color: rgb(4, 214, 4);
+            }
+            
+            col.csexo {
+                background-color: yellow;
+            }
+
+        </style>
+    </head>
+       <!--
+            ANATOMIA PARA TABERLAS GRANDES
+            TABLE
+                CAPTION 
+                THEAD
+                    TR, TD, TH
+                TBODY
+                    TR, TD, TH
+                TFOOT
+                    TR, TD, TH
+        -->
+        <!--COLSPAN - Para ocupar colunas-->
+        <!--ROWSPAN - Para ocupar linhas-->
+        <!--SCOPE (col, colgroup, row, rowgroup) - usado para especificar que a célula do cabeçalho é usada para a linha, coluna, grupo de colunas ou grupo de linhas do cabeçalho. Este atributo não exibe nenhum efeito visual no navegador, mas é usado para leitores de tela-->
+    <body>
+        <h1>Exercício de Tabela</h1>
+
+        <table>
+            <colgroup> <!--COLGROUP é para facilitar no momento da edição do CSS, assim conseguimos definir a cor ou fonte de uma coluna-->
+                <col class="cnome">
+                <col class="csexo" span="2"> <!--usando o SPAN conseguimos definir quantas colunas queremos atingir-->
+                <col class="cidade">
+                <col class="cprof">
+            </colgroup>
+            <caption>Cadastro</caption>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+            <tr>
+                <td>Guilherme</td>
+                <td>M</td>
+                <td>27</td>
+                <td>Analista</td>
+            </tr>
+            <tr>
+                <td>Isabela</td>
+                <td>F</td>
+                <td>17</td>
+                <td>Médica</td>
+            </tr>
+            <tr>
+                <td>Eduardo</td>
+                <td>M</td>
+                <td>20</td>
+                <td>Desenvolvedor</td>
+            </tr>
+            <tr>
+                <td>Regiane</td>
+                <td>F</td>
+                <td>40</td>
+                <td>Chefe</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>M</td>
+                <td>40</td>
+                <td>Mecanico</td>
+            </tr>
+        </table>
+    </body>
+</html>

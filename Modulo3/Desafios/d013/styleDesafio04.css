@@ -5,21 +5,23 @@ body {
 }
 
 table {
-    width: 300px;
-    height: 200px;
+    border-collapse: collapse;
 }
 
 th, td {
     border: 1px solid black;
+    padding: 10px;
+}
+
+.destaque {
+    background-color: dimgray;
+    color: white;
+}
+
+.num {
     text-align: center;
 }
 
-.col {
-    background-color: aqua;
-    color: black;
-}
-
-.row {
-    background-color: blueviolet;
-    color: black;
+.txt {
+    text-align: left;
 }
