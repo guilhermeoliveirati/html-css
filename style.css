@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('imagens/dev.png');
+    background-position: center;
+}
+
+
 header {
     animation: changeBg 5s infinite alternate linear;
 }
@@ -52,4 +59,39 @@ ul {
 
 #modulo3 {
     background-color: #2490d8d1;
+}
+
+#modulo4 {
+    background-color: #185b88d1;
+}
+
+/*Tabela*/
+table {
+    width: 500px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: solid 1px black;
+    padding: 8px;
+}
+
+col.c1 {
+    background-color: #abacab;
+}
+            
+col.c2 {
+    background-color: #abacab;
+}
+
+col.c3 {
+    background-color: #abacab;;
+}
+
+col.c4 {
+    background-color: #abacab;
+}
+
+col.c5 {
+    background-color: #abacab;
 }
