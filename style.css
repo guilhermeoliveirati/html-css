@@ -3,6 +3,9 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-image: url('imagens/dev.png');
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-color: #2181bd;
     background-position: center;
 }
 
@@ -12,10 +15,10 @@ header {
 
 @keyframes changeBg{
     0% {
-        background: #aa0808;
+        background: #2181bd;
     }
     25% {
-        background: #3415bea2;
+        background: #3c2e7ca2;
     }
     50% {
         background: #0aae51;
@@ -50,10 +53,12 @@ ul {
 
 #modulo3 {
     background-color: #2490d8d1;
+    width: 200px;
 }
 
 #modulo4 {
     background-color: #185b88d1;
+    width: 200px;
 }
 
 /*Tabela*/
