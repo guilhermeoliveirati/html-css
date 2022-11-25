@@ -6,7 +6,6 @@ body {
     background-position: center;
 }
 
-
 header {
     animation: changeBg 5s infinite alternate linear;
 }
@@ -49,14 +48,6 @@ ul {
     border-radius: 30px;
 }
 
-#modulo1 {
-    background-color: #2490d851;
-}
-
-#modulo2 {
-    background-color: #2490d899;
-}
-
 #modulo3 {
     background-color: #2490d8d1;
 }
@@ -77,21 +68,34 @@ th, td {
 }
 
 col.c1 {
-    background-color: #abacab;
+    background-color: #2ada2a;
 }
             
 col.c2 {
-    background-color: #abacab;
+    background-color: #2ada2a;
 }
 
 col.c3 {
-    background-color: #abacab;;
+    background-color: #e9ec0a;
 }
 
 col.c4 {
-    background-color: #abacab;
+    background-color: #e9ec0a;
 }
 
 col.c5 {
-    background-color: #abacab;
+    background-color: #e9ec0a;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1px;
+    margin: 0px;
+    border-radius: 50px;
+}
+
+footer > p {
+    margin: 4px;
 }
