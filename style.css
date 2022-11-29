@@ -11,6 +11,11 @@ body {
 
 header {
     animation: changeBg 5s infinite alternate linear;
+
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 50px;
 }
 
 @keyframes changeBg{
@@ -29,13 +34,6 @@ header {
     100% {
         background: #f305f7;
     }
-}
-
-header {
-    font-variant: small-caps;
-    text-align: center;
-    font-size: 30px;
-    border-radius: 50px;
 }
 
 h1 {
@@ -81,11 +79,11 @@ col.c2 {
 }
 
 col.c3 {
-    background-color: #e9ec0a;
+    background-color: #2ada2a;
 }
 
 col.c4 {
-    background-color: #e9ec0a;
+    background-color: #2ada2a;
 }
 
 col.c5 {
@@ -99,6 +97,10 @@ footer {
     padding: 1px;
     margin: 0px;
     border-radius: 50px;
+
+    position: absolute;
+    bottom: 0px;
+    width: 100%;;
 }
 
 footer > p {

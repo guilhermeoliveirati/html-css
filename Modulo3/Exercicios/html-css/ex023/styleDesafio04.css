@@ -1,0 +1,27 @@
+@charset "UTF-8"; /*Para não ter problemas com caracteres especias*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.destaque {
+    background-color: dimgray;
+    color: white;
+}
+
+.num {
+    text-align: center;
+}
+
+.txt {
+    text-align: left;
+}
