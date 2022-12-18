@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 * {
-    margin: 0px;
+    /*margin: 0px;*/ /*Verificar se faz sentido ter*/
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -12,21 +12,25 @@
 } /*Para esconder a barra de rolagem*/
 
 body {
+    background: url('imagens/dev.png') no-repeat;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 750px 422px;
+    background-attachment: fixed;
     background-color: #09c6a2;
-}
-
-.img {
-    background-size: cover;
-    background-attachment: fixed;    
 }
 
 header {
     animation: changeBg 5s infinite alternate linear;
+    width: 70px;
+    height: 70px;
 
-    font-variant: small-caps;
-    text-align: center;
-    font-size: 30px;
-    border-radius: 50px;
+    border-radius: 50%;
+}
+.logo {
+    height: 60px;
+    width: 60px;
+    padding: 5px;
 }
 
 @keyframes changeBg{
@@ -47,17 +51,8 @@ header {
     }
 }
 
-h1 {
-    color: red;
-    text-shadow: #000000 1px 1px;
-}
-
 a {
     color: #000000;
-}
-
-ul {
-    border-radius: 30px;
 }
 
 #modulo3 {
