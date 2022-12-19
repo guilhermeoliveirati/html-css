@@ -15,7 +15,7 @@ body {
     background: url('imagens/dev.png') no-repeat;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 750px 422px;
+    background-size: 650px 344px;
     background-attachment: fixed;
     background-color: #09c6a2;
 }
@@ -51,49 +51,14 @@ header {
     }
 }
 
-a {
-    color: #000000;
+nav#modulos img {
+    width: 60px;
+    margin: -3px;
 }
 
-#modulo3 {
-    background-color: #2490d8d1;
-    width: 200px;
-}
-
-#modulo4 {
-    background-color: #185b88d1;
-    width: 200px;
-}
-
-/*Tabela*/
-table {
-    width: 500px;
-    border-collapse: collapse;
-}
-
-th, td {
-    border: solid 1px black;
-    padding: 8px;
-}
-
-col.c1 {
-    background-color: #2ada2a;
-}
-            
-col.c2 {
-    background-color: #2ada2a;
-}
-
-col.c3 {
-    background-color: #2ada2a;
-}
-
-col.c4 {
-    background-color: #2ada2a;
-}
-
-col.c5 {
-    background-color: #e9ec0a;
+nav#modulos img:hover {
+    transform: translate(8px, 5px); /*transition da movimento para o objeto*/
+    transition: transform .5s, border .5s; /*transition da movimento para o objeto*/
 }
 
 footer {
