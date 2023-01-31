@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+    <html lang="pt-br"> <!--LANG="PT-BR" - Para informar que o site é em portugues-->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="imagens/favicon_G.png" type="image/x-icon"> <!--Para definir o icone do site-->
+        <title>Formulário</title> <!--Titulo da pagina-->
+    </head>
+    <body>
+        <h1>Teste de Formulário</h1>
+        <form action="cadastro.php" method="get" autocomplete="on"> 
+        <!--AUTOCOMPLETE (on/off) - Para ativar ou desativa o auto completar-->
+            <p>
+                <label for="inome"> Nome</label>
+                <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+                <!--REQUIRED - Para exigir o preenchimento do campo-->
+                <!--MAXLENGTH - Para definir o maximo de caracteres-->
+                <!--PLACEHOLDER - Definir uma dica dentro da caixa-->
+                <!--AUTOCOMPLETE="username" - Para sugerir um nome de usuario salvo no navegador-->
+            </p>
+            <p>
+                <label for="imedia"> Média</label>
+                <input type="number" name="media" id="imedia" required min="0" max="10" placeholder="0 a 10" step="0.1">
+                <!--REQUIRED - Para exigir o preenchimento do campo-->
+                <!--MIN - Para definir o minimo de caracteres-->
+                <!--MAX - Para definir o maximo de caracteres-->
+                <!--PLACEHOLDER - Definir uma dica dentro da caixa-->
+                <!--STEP significa passo - Para definir de quanto em quanto pode pular-->
+            </p>
+            <p>
+                <label for="imes"> Período Letívo</label>
+                <input type="month" name="mes" id="imes">
+                <!--Para criar um calendario-->
+            </p>
+            <p>
+                <label for="idia"> Dia da Prova</label>
+                <input type="date" name="dia" id="idia" value="2023-01-30">
+                <!--Para criar um calendario diferente-->
+            </p>
+            <p>
+                <label for="ihora"> Horário da Prova</label>
+                <input type="time" name="hora" id="ihora">
+                <!--Para adicionar a hora-->
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+                <!--Para enviar ou apagar as informações-->
+            </p>
+        </form> 
+    </body>
+</html>
