@@ -20,19 +20,26 @@
         <!--H1 é um elemento de cabeçalho-->
         <form action="cadastro.php" method="get">
             <!--O elemento FORM é usado para criar um formulario-->
-            <p>
-            <!--P é para criar um paragrafo-->
-                <label for="iemail">E-mail</label>
-                <input type="email" name="email" id="iemail" autocomplete="email" required> 
-                <!--AUTOCOMPLETE "email" irá sugerir emails salvos no navegador-->
-                <!--REQUIRED obriga o usuario a preencher o campo-->
-            </p>
-            <p>
-                <label for="itel"> Telefone</label>
-                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\d{4}-\d{4}$" required placeholder="(xx) xxxx-xxxx"> 
-                <!--AUTOCOMPLETE "tel" irá sugerir um telefone salvo no navegador-->
-                <!--REQUIRED obriga o usuario a preencher o campo-->
-            </p>
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <p>
+                    <label for="inome">Nome</label>
+                    <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required>
+                </p>
+                <p>
+                <!--P é para criar um paragrafo-->
+                    <label for="iemail">E-mail</label>
+                    <input type="email" name="email" id="iemail" autocomplete="email" required>
+                    <!--AUTOCOMPLETE "email" irá sugerir emails salvos no navegador-->
+                    <!--REQUIRED obriga o usuario a preencher o campo-->
+                </p>
+                <p>
+                    <label for="itel"> Telefone</label>
+                    <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx) xxxx-xxxx">
+                    <!--AUTOCOMPLETE "tel" irá sugerir um telefone salvo no navegador-->
+                    <!--REQUIRED obriga o usuario a preencher o campo-->
+                </p>
+            </fieldset>
             <p>
                 <input type="submit" value="Enviar">
                 <input type="reset" value="Limpar">
