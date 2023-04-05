@@ -21,7 +21,8 @@ head > h1 {
 /*Para deixar o menu um do lado do outro*/
 menu li {
     display: inline-block;
-    background-color: gray;
+    background-color: #3292c2;
+    border-radius: 10px;
 }
 
 menu ul {
@@ -29,10 +30,12 @@ menu ul {
     color: white;
     display: inline-block;
     padding: 10px;
+    border-radius: 20px;
 }
 
 article {
     width: 600px;
     display: block;
     margin: auto;
+    
 }
