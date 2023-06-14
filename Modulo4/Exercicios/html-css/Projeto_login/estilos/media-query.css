@@ -41,13 +41,21 @@ Desktop: 992px até 1200px
     }
 
     section#login > div#imagem {
-        float: left;
+        float: right;
         width: 40%;
         height: 100%;
     }
 
     selection#login > div#formulario {
-        float: right;
+        float: left;
         width: 60%;
+    }
+
+    div#formulario > h1 {
+        font-size: 2.5em;
+    }
+
+    div#formulario > p {
+        font-size: 1.2em;
     }
 }
