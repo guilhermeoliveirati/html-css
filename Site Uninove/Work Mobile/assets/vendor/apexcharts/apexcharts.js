@@ -1,8 +1,3 @@
-/*!
- * ApexCharts v3.49.0
- * (c) 2018-2024 ApexCharts
- * Released under the MIT License.
- */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :
@@ -33927,19 +33922,11 @@
       var elRect = el.getBoundingClientRect();
 
       if (el.style.display === 'none' || elRect.width === 0) {
-        // if elRect.width=0, the chart is not rendered at all
-        // (it has either display none or hidden in a different tab)
-        // fixes https://github.com/apexcharts/apexcharts.js/issues/2825
-        // fixes https://github.com/apexcharts/apexcharts.js/issues/2991
-        // fixes https://github.com/apexcharts/apexcharts.js/issues/2992
         called = true;
       }
     }
 
     var ro = new ResizeObserver(function (r) {
-      // ROs fire immediately after being created,
-      // per spec: https://drafts.csswg.org/resize-observer/#ref-for-element%E2%91%A3
-      // we don't want that so we just discard the first run
       if (called) {
         fn.call(el, r);
       }

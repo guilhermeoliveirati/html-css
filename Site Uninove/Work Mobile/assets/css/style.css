@@ -1223,3 +1223,15 @@ h6 {
   font-size: 13px;
   color: #012970;
 }
+
+.maps {
+  width: 700px;
+  height: 350px;
+}
+
+.box {
+  width: 730px;
+  height: 420px;
+  border: solid;
+  border-radius: 10px;
+}
